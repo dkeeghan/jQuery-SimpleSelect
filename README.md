@@ -13,11 +13,11 @@ I couldn't find anything that fit my criteria which would be dead simple to impl
 How does it work?
 -----------------
 
-The jQuery code wraps a standard select element in two spans so that the [.sliding doors](http://www.alistapart.com/articles/slidingdoors/) method can be used.
+The jQuery code wraps a standard select element in two spans so that the [sliding doors](http://www.alistapart.com/articles/slidingdoors/) method can be used.
 
 It then adds another span to replicate the select element's label, and sets the opacity of the select box to 0
 
-Because the select element is transparent, -not hidden-, when you interact with it (be it click or keyboard based) you are actually interacting with the select element itself. The plugin then applies classes to indicate what state the select element is in.
+Because the select element is transparent, _not hidden_, when you interact with it (be it click or keyboard based) you are actually interacting with the select element itself. The plugin then applies classes to indicate what state the select element is in.
 
 On open, you see the default dropdown that you would see when you use the default select element. Yes this means that you can't style it, but that's a very small price to pay for a beautiful looking select box, that's fully keyboard accessible, and dead easy to implement.
 
