@@ -1,0 +1,61 @@
+.simpleSelect,
+.simpleSelect span{
+	background: url(images/simpleSelect.png) no-repeat 0 -90px;
+	padding: 0 0 0 19px;
+	height: 29px;
+	position: relative;
+	overflow: visible;
+	display: inline-block;
+}
+
+	.simpleSelect:hover{
+		background-position: 0 -120px;
+	}
+	
+	.simpleSelect.focus{
+		background-position: 0 -150px;
+	}
+
+	.simpleSelect span{
+		background-position: 100% 0;
+		height: 29px;
+		padding: 0;
+	}
+	
+		.simpleSelect:hover span{
+			background-position: 100% -30px;
+		}
+		
+		.simpleSelect.focus span{
+			background-position: 100% -60px;
+		}
+		
+		.simpleSelect span .simpleLabel{
+			background: none;
+			height: auto;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			top: 7px;
+			left: 0;
+		}
+		
+			.simpleSelect span select{
+				position: relative;
+				height: 29px;
+				margin-left: -19px;
+			}
+			
+				.simpleSelect span select{
+					padding: 0 29px 0 19px;
+				}
+				
+					.webkit .simpleSelect span select{
+						padding-right: 39px;
+						-webkit-appearance: none; /* webkit ignores padding to select elements, setting appearance: none resolves this */
+					}
+				
+				.ie7 .simpleSelect span select{
+					margin-left: 0;
+					margin-right: 20px;
+				}
