@@ -38,11 +38,11 @@
 				base.$container.addClass(base.$el.attr('class'));
 
 				//bind keyboard/mouse actions
-				base.$el.on('change keyup', function(){
+				base.$el.on('change.simpleSelect keyup.simpleSelect', function(){
 					base.$el.trigger('updateLabel.simpleSelect');
-				}).on('focus', function(){
+				}).on('focus.simpleSelect', function(){
 					base.$container.addClass(base.options.focusClass);
-				}).on('blur', function(){
+				}).on('blur.simpleSelect', function(){
 					base.$container.removeClass(base.options.focusClass);
 				}).on('updateLabel.simpleSelect', function(){
 					base.$label.text(base.$el.find('option:selected').text());

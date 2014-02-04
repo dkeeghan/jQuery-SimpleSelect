@@ -3,6 +3,20 @@ SimpleSelect jQuery Plugin
 
 jQuery SimpleSelect is a lightweight, simple to use, and accessible way to style select elements using jQuery.
 
+Changelog
+---------
+### Version 1 ###
+* Cleanup of JS file
+* Renamed to remove version number
+* Added copyright notice
+* Changed `.bind` to `.on` to support newer versions of jQuery
+* Added ability to pass multiple space separated classes to `containerClass` (e.g. 'simple-select is-special-version')
+* Added new option `slidingDoors: false` to allow you to turn off the additional `SPAN` created inside the container.
+* Added `.simpleSelect` namespace to all jQuery events used.
+
+### Version 0.1 ###
+* Initial release
+
 Why build it?
 -------------
 
@@ -13,7 +27,7 @@ I couldn't find anything that fit my criteria which would be dead simple to impl
 How does it work?
 -----------------
 
-The jQuery code wraps a standard select element in two spans so that the [sliding doors](http://www.alistapart.com/articles/slidingdoors/) method can be used.
+The jQuery code wraps a standard select element in a span.
 
 It then adds another span to replicate the select element's label, and sets the opacity of the select box to 0
 
@@ -40,12 +54,22 @@ Or you can add options to override the classes used by the plugin
 ```javascript
 $(function(){
     $('select').validation({
-        containerClass: 'simpleSelect',
-        labelClass: 'simpleLabel',
-        focusClass: 'focus'
+        containerClass: 'simple-select',
+        labelClass: 'simple-label',
+        focusClass: 'focus',
+        slidingDoors: true
     });
 });
 ```
+
+Options
+-------
+
+There are 4 options:
+* **containerClass** (string: `'simple-select'`): class applied to the container wrapped around the hidden `SELECT` element.
+* **labelClass** (string: `'simple-label'`): class applied to the label inside the container.
+* **focusClass** (string: `'focus'`): class applied to the container on focus of the `SELECT` element.
+* **slidingDoors** (boolean: `true`): appends two `SPAN` elements around the `SELECT` instead of one so so that the [sliding doors](http://www.alistapart.com/articles/slidingdoors/) method can be used.
 
 Tested browsers
 ---------------
