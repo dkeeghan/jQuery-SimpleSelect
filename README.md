@@ -66,6 +66,7 @@ Options
 -------
 
 There are 4 options:
+
 **containerClass** (string: `'simple-select'`)
 > class applied to the container wrapped around the hidden `SELECT` element.
 
