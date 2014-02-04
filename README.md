@@ -66,10 +66,17 @@ Options
 -------
 
 There are 4 options:
-* **containerClass** (string: `'simple-select'`): class applied to the container wrapped around the hidden `SELECT` element.
-* **labelClass** (string: `'simple-label'`): class applied to the label inside the container.
-* **focusClass** (string: `'focus'`): class applied to the container on focus of the `SELECT` element.
-* **slidingDoors** (boolean: `true`): appends two `SPAN` elements around the `SELECT` instead of one so so that the [sliding doors](http://www.alistapart.com/articles/slidingdoors/) method can be used.
+**containerClass** (string: `'simple-select'`)
+> class applied to the container wrapped around the hidden `SELECT` element.
+
+**labelClass** (string: `'simple-label'`)
+> class applied to the label inside the container.
+
+**focusClass** (string: `'focus'`)
+> class applied to the container on focus of the `SELECT` element.
+
+**slidingDoors** (boolean: `true`)
+> appends two `SPAN` elements around the `SELECT` instead of one so so that the [sliding doors](http://www.alistapart.com/articles/slidingdoors/) method can be used.
 
 Tested browsers
 ---------------
