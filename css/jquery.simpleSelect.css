@@ -1,5 +1,5 @@
-.simpleSelect,
-.simpleSelect span{
+.simple-select,
+.simple-select span{
 	background: url(images/simpleSelect.png) no-repeat 0 -90px;
 	padding: 0 0 0 19px;
 	height: 29px;
@@ -8,29 +8,29 @@
 	display: inline-block;
 }
 
-	.simpleSelect:hover{
+	.simple-select:hover{
 		background-position: 0 -120px;
 	}
 	
-	.simpleSelect.focus{
+	.simple-select.focus{
 		background-position: 0 -150px;
 	}
 
-	.simpleSelect span{
+	.simple-select span{
 		background-position: 100% 0;
 		height: 29px;
 		padding: 0;
 	}
 	
-		.simpleSelect:hover span{
+		.simple-select:hover span{
 			background-position: 100% -30px;
 		}
 		
-		.simpleSelect.focus span{
+		.simple-select.focus span{
 			background-position: 100% -60px;
 		}
 		
-		.simpleSelect span .simpleLabel{
+		.simple-select span .simple-label{
 			background: none;
 			height: auto;
 			padding: 0;
@@ -40,22 +40,22 @@
 			left: 0;
 		}
 		
-			.simpleSelect span select{
+			.simple-select span select{
 				position: relative;
 				height: 29px;
 				margin-left: -19px;
 			}
 			
-				.simpleSelect span select{
+				.simple-select span select{
 					padding: 0 29px 0 19px;
 				}
 				
-					.webkit .simpleSelect span select{
+					.webkit .simple-select span select{
 						padding-right: 39px;
 						-webkit-appearance: none; /* webkit ignores padding to select elements, setting appearance: none resolves this */
 					}
 				
-				.ie7 .simpleSelect span select{
+				.ie7 .simple-select span select{
 					margin-left: 0;
 					margin-right: 20px;
 				}
